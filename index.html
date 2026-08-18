@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<meta charset="UTF-8">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天気予報検索</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <h1>天気予報検索</h1>
+
+    <div class="coord-row">
+      <input type="text" id="latInput" placeholder="緯度 (例: 35.6895)">
+      <input type="text" id="lonInput" placeholder="経度 (例: 139.6917)">
+    </div>
+    <button id="searchBtn" class="primary-btn">検索</button>
+
+    <p class="status" id="statusText"></p>
+    <div class="result" id="resultArea"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

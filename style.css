@@ -1,0 +1,104 @@
+* { box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+  background: #f4f5f7;
+  margin: 0;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.app {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  padding: 28px 24px;
+}
+
+h1 {
+  font-size: 20px;
+  margin: 0 0 4px;
+  color: #1f2430;
+}
+
+.subtitle {
+  font-size: 13px;
+  color: #8b91a1;
+  margin: 0 0 20px;
+}
+
+.coord-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+#latInput, #lonInput {
+  flex: 1;
+  min-width: 0;
+  padding: 10px 12px;
+  border: 1px solid #e1e3e8;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+#latInput:focus, #lonInput:focus {
+  border-color: #6c5ce7;
+}
+
+.primary-btn {
+  display: block;
+  width: 100%;
+  padding: 10px 16px;
+  background: #6c5ce7;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+.primary-btn:hover {
+  background: #5b4bd6;
+}
+
+.status {
+  font-size: 13px;
+  color: #8b91a1;
+  min-height: 18px;
+  margin: 0 0 8px;
+}
+
+.result {
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 0;
+}
+
+.city-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #1f2430;
+  margin: 0 0 4px;
+}
+
+.temperature {
+  font-size: 40px;
+  font-weight: bold;
+  color: #6c5ce7;
+  margin: 0 0 4px;
+}
+
+.condition {
+  font-size: 14px;
+  color: #8b91a1;
+  margin: 0;
+}
